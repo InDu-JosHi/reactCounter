@@ -1,0 +1,90 @@
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter{
+  height: 60vh;
+  width: 60vw;
+  background-color: #ffff;
+  border-radius: 10px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter h1{
+  font-size:2.5rem;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+.counter p{
+  font-size: 5.5rem;
+  text-align: center;
+  margin: 10px auto;
+}
+.counter button{
+  margin: 2rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  color: #ffff;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.increaseBtn{
+  background-color: darkgreen;
+}
+.decreaseBtn{
+  background-color: maroon;
+}
+.counter button:active{
+  background-color: grey;
+}
+.counter .resetBtn{
+  background-color: goldenrod;
+  border-radius: 50%;
+  margin: 0;
+  padding: 30px 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .counter{
+    height: 70vh;
+    width: 80vw;
+  }
+  .counter h1{
+    font-size:2rem;
+  }
+  .counter p{
+    font-size: 4.5rem;
+    
+  }
+  .counter button{
+    margin: 1rem;
+    padding: 12px 15px;
+    font-size: 12px;
+  }
+  .counter .resetBtn{
+    padding: 25px 15px;
+  }
+}
+@media screen and (max-width: 380px){
+  .counter{
+    height: 70vh;
+    width: 95vw;
+  }
+  .counter button{
+    margin: .5rem;
+    padding: 12px 15px;
+  }
+  .counter .resetBtn{
+    padding: 15px 5px;
+  }
+} 
